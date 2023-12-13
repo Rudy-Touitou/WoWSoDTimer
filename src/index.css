@@ -1,0 +1,22 @@
+@import url('https://fonts.cdnfonts.com/css/lifecraft');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style de base pour le corps de la page */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    
+  }
+  
+  /* Style de base pour les conteneurs */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }

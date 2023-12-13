@@ -1,0 +1,102 @@
+/* App.css */
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Utilise 100% de la hauteur de la vue */
+
+}
+  
+  .logo {
+    width: 45%;
+    height: auto;
+    /* margin: 3rem 2rem; Ajuste l'espace horizontal entre les compteurs */
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .compteur {
+    justify-content: center;
+    display: flex;
+    margin: 0 2rem 2rem 0; /* Ajuste l'espace vertical entre les compteurs */
+    font-family: 'LifeCraft', sans-serif;
+    font-size: 5rem;
+    letter-spacing: 0.05em;
+    color: #fab71e; /* Ajoute une couleur de texte si nécessaire */ 
+    -webkit-text-stroke: 0.17rem #8f3e00cc;
+    text-shadow: rgb(20, 20, 20) 7px 6px 5px; /*  Ajoute une ombre au texte */ 
+    gap: 2rem; 
+    text-align: center; /* Ajuste le texte au centre */
+  }
+
+
+ 
+.pepe {
+    margin-bottom: 3.5rem;
+}
+  body {
+    margin: 0;
+    overflow: hidden; /* Empêche l'apparition de barres de défilement */
+  }
+
+  /* .img {
+    display: flex;
+    justify-content: center;
+  }
+   */
+/* ======================== MEDIA QUERIES (MEDIUM DEVICES) ======================== */
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        width: 55%;
+        height: auto;
+        margin: 4rem 2rem; /* Ajuste l'espace horizontal entre les compteurs */
+      }
+      /* .compteur {
+        display: flex;
+        flex-direction: column;
+      } */
+      .img .dancing {
+    width: 50%;
+}
+}
+
+/* ======================== MEDIA QUERIES (SMALL DEVICES) ======================== */
+
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 100%;
+        /* height: auto; */
+        /* margin: 4rem 2rem; Ajuste l'espace horizontal entre les compteurs */
+      }
+    .compteur {
+        display: flex;
+        flex-direction: column;
+        font-size: 3rem;
+      }
+      .img {
+        display: flex;
+        justify-content: center;
+      }
+      .dancing {
+        width: 45%;
+      }
+}
